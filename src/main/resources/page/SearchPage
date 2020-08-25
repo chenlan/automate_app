@@ -1,0 +1,26 @@
+elements:
+  search_input_text: #fgfgfg
+    element:
+      - id: search_input_text
+  element_loginbtn2:
+    element:
+      - id: dfdf
+      - id: iosId
+        version: 3.0
+
+methods:
+  search:
+    steps:
+      - id: search_input_text
+        send: ${keyword}
+      - id: name
+
+  cancel:
+    steps:
+      - id: action_close
+
+  getCurrentPrice:
+    steps:
+      - id: current_price
+        get: text
+        dump: price
